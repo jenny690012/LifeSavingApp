@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/friend_request_imgv"
+            android:src="@drawable/header" />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:text="Back"
+        android:textSize="20dp"
+        android:id = "@+id/friends_request_back"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="@drawable/button2" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text = "Friend Request List"
+        android:textColor="#ff0000"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="35dp"/>
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="#ff0000" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/friend_request_list"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>

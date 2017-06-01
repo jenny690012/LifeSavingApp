@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome"> The Mission of our app is to let user share their health information and customized emergency list with their friend. Then, In case help is needed, user press emergency button to notify all friends for help. Friends can help user by pressing tracking find user. And hopefully, with information shared before hand, friend can does some help</string>
+    <string name="profile_text"> Here you can view and edit your own profile and emergency list. When you done, exit this page to share your update with friends</string>
+    <string name="profile_list_1">If list is not empty, then below it you will see a list of emergencies with their last modified date. </string>
+    <string name="profile_list_2">Click each emergency to view and edit it\'s content. Long click a emergency can delete this emergency. </string>
+    <string name="profile_list_3">Click the red Add button, which is beside the title \"Emergency List\" can let you add an emergency either by create a new one from scratch, or pick an emergency from Tip Bank as starting template (We will talk more about it later) </string>
+    <string name="profile_list_4">If you do click one of the emergency. you will see something like above. you can try to play around with it and see how they work. if you do add a new instruction. the new instruction will show up on the list view below ADD INSTRUCTION button. </string>
+    <string name="profile_list_5">Long Click an instruction inside the instruction list will let you delete, modify, or add  new instruction before this instruction</string>
+    <string name="tip_bank_text">Here you can learn first aid instructions for 16 common emergencies, created by Canadian Red Cross, suitable for first aider of any level. </string>
+    <string name="friend_text">Here you can view your list of friends and their profiles, Which are very similar to what you see in User Profile, expect not editable.</string>
+    <string name="friend_text_1">First thing you see in this page will be a list of friends you have, click on each friend will lead you to their profile page, then you will see three following buttons: </string>
+    <string name="friend_text_2"> After you receive a SOS_Message notification, you can press this button to have Google up open, and, navigate to your friends location from your current location.</string>
+    <string name="friend_text_3"> Pressing this button will send a standard SOS_Message to this friend\'s phone number, and also send your current location to this friend, who will be able to find you by pressing track button on their device. </string>
+    <string name="notification_text"> You will see a list of new friend requests, click a new request to accept, deny, or ignore this reuqest</string>
+    <string name="emergency_button_text"> This Button may saving your life! Press this button to call 911, and have our server notifies all your friends that you are in danger. Your current location is also send to server, which can be used by a helping friend to track you.</string>
+    <string name="header_text">Navigating through your app any where your want. When you need to go back to home page, just press on the header!</string>
+</resources>

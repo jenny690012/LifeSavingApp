@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/viewFriendInfo_imageView"
+            android:src="@drawable/header" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:text="Back"
+        android:textSize="20dp"
+        android:id = "@+id/viewFriendInfo_buttonBack"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="@drawable/button2" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_gravity="center_horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="#ff0000"
+                    android:text="Name:"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#000000"
+                    android:id="@+id/viewFriendInfo_name"
+                    android:textSize="30dp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="#ff0000" />
+
+            </LinearLayout>
+
+            <!--code for next section-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="#ff0000"
+                    android:text="Birth Date:"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#000000"
+                    android:text="December 24 2016"
+                    android:id = "@+id/viewFriendInfo_birthDate"
+                    android:textSize="30dp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="#ff0000" />
+            </LinearLayout>
+            <!-- end-->
+
+            <!--code for next section-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="#ff0000"
+                    android:text="Height (cm):"
+                    android:textSize="25dp"
+                    android:id="@+id/height"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#000000"
+                    android:text="111"
+                    android:layout_toRightOf="@id/height"
+                    android:id = "@+id/viewFriendInfo_height"
+                    android:textSize="25dp"/>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginLeft="160dp"
+                    android:background="#ff0000"
+                    android:layout_below="@id/viewFriendInfo_height"/>
+            </RelativeLayout>
+            <!-- end-->
+
+            <!--code for next section-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="#ff0000"
+                    android:text="Weight (kg):"
+                    android:textSize="25dp"
+                    android:id="@+id/weight"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#000000"
+                    android:text="111"
+                    android:layout_toRightOf="@id/weight"
+                    android:id = "@+id/viewFriendInfo_weight"
+                    android:textSize="25dp"/>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginLeft="160dp"
+                    android:background="#ff0000"
+                    android:layout_below="@id/viewFriendInfo_weight"/>
+            </RelativeLayout>
+            <!-- end-->
+
+            <!--code for next section-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="#ff0000"
+                    android:text="Blood Type :"
+                    android:textSize="25dp"
+                    android:id="@+id/bloodType"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#000000"
+                    android:text="111"
+                    android:layout_toRightOf="@id/bloodType"
+                    android:id = "@+id/viewFriendInfo_bloodType"
+                    android:textSize="25dp"/>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginLeft="160dp"
+                    android:background="#ff0000"
+                    android:layout_below="@id/viewFriendInfo_bloodType"/>
+            </RelativeLayout>
+            <!-- end-->
+
+
+            <!--code for next section-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="#ff0000"
+                    android:text="Phone Number:"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000000"
+                    android:id="@+id/viewFriendInfo_phone"
+                    android:textSize="30dp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="#ff0000" />
+            </LinearLayout>
+            <!-- end-->
+
+
+            <!--code for next section-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="#ff0000"
+                    android:text="Health History:"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#000000"
+                    android:id = "@+id/viewFriendInfo_health"
+                    android:textSize="30dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="#ff0000" />
+
+            </LinearLayout>
+            <!-- end-->
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

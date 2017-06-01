@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/friendEmergency_imageView"
+            android:src="@drawable/header" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Owner:"
+        android:textColor="#ff0000"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Friend's name"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:id="@+id/friendEmergency_name"
+        android:textSize="30dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#ff0000"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "Strains and Sprains"
+        android:textColor="#000000"
+        android:id="@+id/friendEmergency_em"
+        android:textSize="30dp"
+        android:layout_marginLeft="10dp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:text="Back"
+            android:textSize="20dp"
+            android:id = "@+id/friendEmergency_butonBack"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:background="@drawable/button2" />
+
+
+
+        <Button
+            android:layout_marginLeft="120dp"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="PREV"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="@drawable/button2"
+            android:id = "@+id/friendEmergency_buttonPrevious"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:text="Next"
+            android:textSize="20dp"
+            android:id = "@+id/friendEmergency_buttonNext"
+            android:background="@drawable/button2"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emergency_listView" />
+
+
+
+</LinearLayout>

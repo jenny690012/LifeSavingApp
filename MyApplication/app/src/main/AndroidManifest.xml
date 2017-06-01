@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jenny.lifesavingaidui">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LifeSavingAidMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".SavingTipBank">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LifeSavingAidMain"/>
+        </activity>
+        <activity android:name=".ShowContent">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LifeSavingAidMain"/>
+        </activity>
+        <activity android:name=".UserProfilePage">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LifeSavingAidMain"/>
+        </activity>
+        <activity android:name=".EditUserProfile"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name=".CreateNewEmergency"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name=".addOption"></activity>
+        <activity android:name=".editEmergencyOption"></activity>
+        <activity android:name=".getNewInstruction"></activity>
+        <activity android:name=".modifyInstruction"></activity>
+        <activity android:name=".FriendProfile">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LifeSavingAidMain"/>
+        </activity>
+        <activity android:name=".FriendList">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LifeSavingAidMain"/>
+        </activity>
+        <activity android:name=".viewFriendProfile">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LifeSavingAidMain"/>
+        </activity>
+        <activity android:name=".AddFriend">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LifeSavingAidMain"/>
+        </activity>
+        <activity android:name=".showFriendEmergency">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LifeSavingAidMain"/>
+        </activity>
+        <activity android:name=".HowToUse"></activity>
+        <activity android:name=".NewRequest">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LifeSavingAidMain"/>
+        </activity>
+        <activity android:name=".NewFriendRequestList"></activity>
+    </application>
+
+</manifest>
